@@ -8,5 +8,6 @@ int main() {
   
     // This statement prints "Hello World"
     cout << "Hello World Second";
+    cout << "123456";
     return 0;
 }
