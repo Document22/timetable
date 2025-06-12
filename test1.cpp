@@ -1,6 +1,5 @@
 #include <xlnt/xlnt.hpp>
 #include <iostream>
-
 int main() {
     xlnt::workbook wb;
 
@@ -16,6 +15,7 @@ int main() {
         }
     } catch (const std::exception &e) {
         std::cerr << "Error reading Excel file: " << e.what() << std::endl;
+        std::cerr << "CHECK ONCE " << e.what() << std::endl;
     }
 
     return 0;
