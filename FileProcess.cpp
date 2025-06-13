@@ -7,13 +7,18 @@ private:
 protected:
     int c=10;
 public:
+    File CSV_FILE_PATH="";
     void loadData();  // Fixed: method declaration
+    void convertToCSV(FILE file);
     void readData();
     void display(){
     cout << c << endl;
 }    
 };
 
+void FileProcess::convertToCSV(FILE excelFile){
+    //logic to convert 
+}
 void FileProcess::loadData() {
     cout << "Hello inside load method" << endl;
 }
@@ -26,6 +31,7 @@ void FileProcess :: readData(){
     while (fin.read() != '\0')
     {
         getline(fin, line);
+        line.
         cout << line << endl;
     }
     fin.close();
