@@ -7,34 +7,34 @@ private:
 protected:
     int c=10;
 public:
-    File CSV_FILE_PATH="";
     void loadData();  // Fixed: method declaration
-    void convertToCSV(FILE file);
     void readData();
     void display(){
     cout << c << endl;
 }    
 };
-
-void FileProcess::convertToCSV(FILE excelFile){
-    //logic to convert 
-}
 void FileProcess::loadData() {
     cout << "Hello inside load method" << endl;
 }
 // READ THE CSV FILE
 void FileProcess :: readData(){
     fstream fin;
-    fin.open("assets/ctcs_log.csv", ios::in);
+    fin.open("assets/TIMETABLEJULY-TODEC24.csv", ios::in);
     string line, temp;
-    cout <<"temp: "+temp.isEmpty() <<endl;
-    while (fin.read() != '\0')
-    {
+    vector <string> data;
+    while (!fin.eof()){
         getline(fin, line);
-        line.
-        cout << line << endl;
+        cout<< line <<endl;
+        data.push_back(line);
     }
     fin.close();
+}
+
+// DISPLAY A SELECTED PART 
+void FileProcess :: display(){
+    for(int i = 0; i<14 ; i++){
+        for(int j)
+    }
 }
 
 int main() {
